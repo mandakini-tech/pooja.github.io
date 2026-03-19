@@ -6,285 +6,86 @@
 </head>
 <body>
 
-    <h1>Welcome</h1>
-    <p>This is a simple webpage using external CSS.</p>
-    <button>Click Me</button>
-<h3>What i learned in this course of coursera for git and github</h3>
-    <p>
-     1. git stash
+<h1>Welcome</h1>
+<p>This is a simple webpage using external CSS.</p>
+<button>Click Me</button>
+
+<h2>What I learned in this course of Coursera for Git and GitHub</h2>
+
+<h3>1. git stash</h3>
+<ul>
+    <li><b>Meaning:</b> Temporarily saves your uncommitted changes so you can work on something else.</li>
+    <li><b>Commands:</b>
+        <ul>
+            <li>git stash</li>
+            <li>git stash pop</li>
+            <li>git stash list</li>
+            <li>git stash apply</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>2. git rebase</h3>
+<ul>
+    <li><b>Meaning:</b> Reapplies commits on top of another base branch.</li>
+    <li><b>Commands:</b>
+        <ul>
+            <li>git rebase &lt;branch&gt;</li>
+            <li>git rebase -i &lt;branch&gt;</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>3. git log</h3>
+<ul>
+    <li><b>Meaning:</b> Shows commit history.</li>
+    <li><b>Commands:</b>
+        <ul>
+            <li>git log</li>
+            <li>git log --oneline</li>
+            <li>git log --graph</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>4. Other Important Git Commands</h3>
+<ul>
+    <li>git config</li>
+    <li>git status</li>
+    <li>git add</li>
+    <li>git commit</li>
+    <li>git push</li>
+    <li>git pull</li>
+    <li>git clone</li>
+    <li>git branch</li>
+    <li>git checkout / git switch</li>
+    <li>git merge</li>
+    <li>git fetch</li>
+    <li>git reset</li>
+    <li>git revert</li>
+    <li>git diff</li>
+    <li>git remote</li>
+    <li>git tag</li>
+    <li>git show</li>
+</ul>
+
+<h3>5. GitHub Features</h3>
+<ul>
+    <li><b>Wiki:</b> Documentation space for projects</li>
+    <li><b>Projects:</b> Task tracking (like Trello)</li>
+    <li><b>Insights:</b> Repository analytics</li>
+    <li><b>Actions:</b> Automate workflows (CI/CD)</li>
+    <li><b>Issues:</b> Track bugs and tasks</li>
+</ul>
+
+<h3>6. Useful Terminal Commands</h3>
+<ul>
+    <li>clear — Clear terminal</li>
+    <li>pwd — Show current directory</li>
+    <li>ls — List files</li>
+    <li>cd &lt;folder&gt; — Change directory</li>
+    <li>history — Show previous commands</li>
+</ul>
 
-Meaning: Temporarily saves your uncommitted changes so you can work on something else.
-
-Syntax:
-
-git stash
-git stash pop
-git stash list
-git stash apply
-
-Explanation:
-
-git stash → Save current changes
-
-git stash pop → Restore and remove from stash
-
-git stash list → Show all saved stashes
-
- 2. git rebase
-
-Meaning: Reapplies commits on top of another base branch (cleaner history than merge).
-
-Syntax:
-
-git rebase <branch>
-git rebase -i <branch>
-
-Explanation:
-
-Moves your branch commits onto another branch
-
--i → interactive mode (edit, squash commits)
-
- 3. git log
-
-Meaning: Shows commit history.
-
-Syntax:
-
-git log
-git log --oneline
-git log --graph
-
-Explanation:
-
---oneline → compact view
-
---graph → shows branch structure
-
- 4. git config
-
-Meaning: Set Git configuration (username, email, editor).
-
-Syntax:
-
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
-git config --list
- 5. git status
-
-Meaning: Shows current state of files.
-
-Syntax:
-
-git status
- 6. git add
-
-Meaning: Adds files to staging area.
-
-Syntax:
-
-git add <file>
-git add .
- 7. git commit
-
-Meaning: Saves changes permanently.
-
-Syntax:
-
-git commit -m "message"
- 8. git push
-
-Meaning: Uploads local commits to GitHub.
-
-Syntax:
-
-git push origin <branch>
- 9. git pull
-
-Meaning: Fetch + merge changes from remote.
-
-Syntax:
-
-git pull origin <branch>
-10. git clone
-
-Meaning: Copies a remote repository.
-
-Syntax:
-
-git clone <repo_url>
- 11. git branch
-
-Meaning: Manage branches.
-
-Syntax:
-
-git branch
-git branch <name>
-git branch -d <name>
- 12. git checkout (older) / git switch
-
-Meaning: Switch branches or restore files.
-
-Syntax:
-
-git checkout <branch>
-git switch <branch>
- 13. git merge
-
-Meaning: Combines branches.
-
-Syntax:
-
-git merge <branch>
- 14. git fetch
-
-Meaning: Downloads changes without merging.
-
-Syntax:
-
-git fetch
- 15. git reset
-
-Meaning: Undo changes.
-
-Syntax:
-
-git reset --soft HEAD~1
-git reset --hard HEAD~1
- 16. git revert
-
-Meaning: Undo a commit safely (creates new commit).
-
-Syntax:
-
-git revert <commit_id>
-17. git diff
-
-Meaning: Shows changes between files/commits.
-
-Syntax:
-
-git diff
-git diff <branch>
- 18. git remote
-
-Meaning: Manage remote repositories.
-
-Syntax:
-
-git remote -v
-git remote add origin <url>
- 19. git tag
-
-Meaning: Marks versions/releases.
-
-Syntax:
-
-git tag v1.0
-git push origin v1.0
- 20. git show
-
-Meaning: Shows details of a commit.
-
-Syntax:
-
-git show <commit_id>
-21. Friendly Git Bash Commands (Shortcuts & Useful Tips)
-clear          # Clear terminal
-pwd            # Show current directory
-ls             # List files
-cd <folder>    # Change directory
-history        # Show previous commands
- 22. Advanced Helpful Commands
- Squash commits
-git rebase -i HEAD~3
- Amend last commit
-git commit --amend
- Stash specific files
-git stash push <file>
-    </p>
-    <p>
-        GitHub Pages
-        1. Wiki
-
-Meaning: A space to create and maintain project documentation.
-
-Use:
-
-Write guides, setup instructions, FAQs
-
-Helps users and contributors understand the project
-
-Example use:
-
-Documentation for installation steps
-
-API usage guide
-
- 2. Project
-
-Meaning: A tool to organize and track work using boards (like Trello).
-
-Use:
-
-Manage tasks using columns like To Do, In Progress, Done
-
-Track progress of features or bugs
-
-Example:
-
-Sprint planning board for a team project
-
- 3. Insights
-
-Meaning: Analytics and statistics about your repository.
-
-Use:
-
-View contributions, commits, and activity
-
-Track project health and collaboration
-
-Example:
-
-See who contributed the most
-
-Monitor repo traffic
-
- 4. Actions
-
-Meaning: Automate workflows using CI/CD (Continuous Integration & Deployment).
-
-Use:
-
-Run tests automatically
-
-Deploy code when changes are pushed
-
-Example:
-
-Run tests on every push
-
-Auto-deploy to a server or cloud
-
- 5. Issues
-
-Meaning: A tool to track bugs, tasks, and feature requests.
-
-Use:
-
-Report bugs
-
-Discuss improvements
-
-Assign tasks to team members
-
-Example:
-
-“Fix login bug” issue
-
-“Add dark mode feature” request
-    </p>
 </body>
 </html>
